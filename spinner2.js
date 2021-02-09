@@ -6,10 +6,6 @@ function spinner() {
       process.stdout.write(`\r${icon}`);
     }, (delay += 200));
   }
-  // to fix the new line at the end
-  setTimeout(() => {
-    process.stdout.write("\n");
-  }, delay);
 }
 
 spinner();
